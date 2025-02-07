@@ -104,6 +104,10 @@ loginForm.addEventListener("submit", function (e) {
             successMessage += "You will be logged out soon."
         }
         displaySuccess(successMessage,3000); //Calling success display method, so it will show and remove message as we are not refreshing page after submit 
+        loginUserName.value="";
+        loginPassword.value="";
+        if(LoggedIn.checked)
+            LoggedIn.checked=False
       }
     }
   } else {
